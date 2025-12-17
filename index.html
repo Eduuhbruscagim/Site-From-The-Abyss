@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- ================= META BÁSICA ================= -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="From the Abyss - Uma jornada emocional através de plataformas desafiadoras. Explore os medos e arrependimentos de Osvaldo em sua busca por redenção."
+    />
+    <meta
+      name="keywords"
+      content="jogo, plataforma, indie, TCC, From the Abyss, aventura, emocional"
+    />
+    <meta name="author" content="Eduardo Guilherme Bruscagim" />
+
+    <!-- ================= META PARA COMPARTILHAMENTO ================= -->
+    <meta property="og:title" content="From the Abyss - Página Inicial" />
+    <meta
+      property="og:description"
+      content="Uma jornada emocional através de plataformas desafiadoras"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="assets/images/og-image.jpg" />
+
+    <!-- ================= TÍTULO ================= -->
+    <title>From the Abyss - Uma Jornada Emocional</title>
+
+    <!-- ================= FONTES E ÍCONES ================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ícones (Font Awesome) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- ================= CSS PRINCIPAL ================= -->
+    <link rel="stylesheet" href="Assets/Css/main.css" />
+  </head>
+
+  <body>
+    <!-- ================= CABEÇALHO / NAVBAR ================= -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <!-- LOGO -->
+        <a href="index.html" class="nav-logo">
+          <i class="fas fa-gamepad"></i> From the Abyss
+        </a>
+
+        <!-- MENU DE NAVEGAÇÃO -->
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="historia.html" class="nav-link">História</a>
+          </li>
+          <li class="nav-item">
+            <a href="mecanica.html" class="nav-link">Mecânica</a>
+          </li>
+          <li class="nav-item">
+            <a href="desenvolvedor.html" class="nav-link">Desenvolvedor</a>
+          </li>
+        </ul>
+
+        <!-- BOTÃO MOBILE -->
+        <div class="nav-toggle" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ================= CONTEÚDO PRINCIPAL ================= -->
+    <main class="main">
+      <!-- ===== SEÇÃO PRINCIPAL (Apresentação principal) ===== -->
+      <section class="section-hero" id="hero">
+        <div class="container">
+          <div class="grid grid-2" style="align-items: center; gap: 4rem">
+            <!-- Texto principal -->
+            <div class="animate-fade-in-left">
+              <h1 class="mb-4">From the Abyss</h1>
+              <p
+                class="mb-6"
+                style="
+                  font-size: var(--font-size-xl);
+                  color: var(--text-secondary);
+                "
+              >
+                Divirta-se e conheça meu trabalho!
+              </p>
+              <p class="mb-6" style="color: var(--text-muted)">
+                Uma jornada emocional através de plataformas desafiadoras, onde
+                Osvaldo enfrenta seus medos mais profundos em busca de redenção
+                e paz interior.
+              </p>
+              <div
+                style="display: flex; gap: var(--spacing-lg); flex-wrap: wrap"
+              >
+                <a href="#download" class="btn btn-primary btn-lg">
+                  <i class="fas fa-download"></i> Download
+                </a>
+                <a href="historia.html" class="btn btn-secondary btn-lg">
+                  <i class="fas fa-book"></i> Conheça a História
+                </a>
+              </div>
+            </div>
+
+            <!-- Imagem / Logo -->
+            <div class="animate-fade-in-right" style="text-align: center">
+              <div style="position: relative; display: inline-block">
+                <!-- Círculo com logo -->
+                <div
+                  style="
+                    width: 300px;
+                    height: 300px;
+                    background: var(--gradient-secondary);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: var(--shadow-glow);
+                    animation: pulse 3s infinite;
+                  "
+                >
+                  <img
+                    src="Assets/Images/Background/From the Abyss - Logo.png"
+                    alt="Logo From the Abyss"
+                    style="
+                      width: 80%;
+                      height: 80%;
+                      object-fit: contain;
+                      border-radius: 50%;
+                    "
+                  />
+                </div>
+
+                <!-- Elementos decorativos -->
+                <div
+                  style="
+                    position: absolute;
+                    top: 20%;
+                    left: -20%;
+                    width: 60px;
+                    height: 60px;
+                    background: var(--gradient-primary);
+                    border-radius: 50%;
+                    animation: fadeInUp 2s infinite alternate;
+                  "
+                ></div>
+                <div
+                  style="
+                    position: absolute;
+                    bottom: 20%;
+                    right: -20%;
+                    width: 40px;
+                    height: 40px;
+                    background: var(--secondary-color);
+                    border-radius: 50%;
+                    animation: fadeInUp 2s infinite alternate-reverse;
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CARACTERISTICAS SECTION (Destaques do jogo) ===== -->
+      <section class="section section-dark" id="features">
+        <div class="container">
+          <h2 class="section-title">O que esperar dentro do jogo</h2>
+
+          <div class="grid grid-3">
+            <!-- Card 1 -->
+            <div class="card animate-fade-in-up" style="animation-delay: 0.1s">
+              <div style="text-align: center; margin-bottom: var(--spacing-lg)">
+                <div
+                  style="
+                    width: 80px;
+                    height: 80px;
+                    background: var(--gradient-secondary);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto var(--spacing-md);
+                  "
+                >
+                  <i
+                    class="fas fa-running"
+                    style="font-size: 2rem; color: var(--text-primary)"
+                  ></i>
+                </div>
+              </div>
+              <h3 class="card-title text-center">Plataformas e Parkour</h3>
+              <p class="card-content text-center">
+                <strong>Parkours desafiadores</strong> que testam suas
+                habilidades de precisão e timing em ambientes perigosos.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card animate-fade-in-up" style="animation-delay: 0.2s">
+              <div style="text-align: center; margin-bottom: var(--spacing-lg)">
+                <div
+                  style="
+                    width: 80px;
+                    height: 80px;
+                    background: var(--gradient-secondary);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto var(--spacing-md);
+                  "
+                >
+                  <i
+                    class="fas fa-seedling"
+                    style="font-size: 2rem; color: var(--text-primary)"
+                  ></i>
+                </div>
+              </div>
+              <h3 class="card-title text-center">Ambientes Evolutivos</h3>
+              <p class="card-content text-center">
+                <strong>Ambiente que se dificulta</strong> com a jornada do
+                protagonista, refletindo seu progresso.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card animate-fade-in-up" style="animation-delay: 0.3s">
+              <div style="text-align: center; margin-bottom: var(--spacing-lg)">
+                <div
+                  style="
+                    width: 80px;
+                    height: 80px;
+                    background: var(--gradient-secondary);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto var(--spacing-md);
+                  "
+                >
+                  <i
+                    class="fas fa-mask"
+                    style="font-size: 2rem; color: var(--text-primary)"
+                  ></i>
+                </div>
+              </div>
+              <h3 class="card-title text-center">Confronto Interior</h3>
+              <p class="card-content text-center">
+                <strong>Atmosféra</strong> que representa algo abandonado e
+                antigo, criando uma experiência curiosa e agradável.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SOBRE SECTION (Descrição do projeto) ===== -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="grid grid-2" style="align-items: center; gap: 4rem">
+            <!-- Texto -->
+            <div class="animate-fade-in-left">
+              <h2 class="mb-4">Uma Jornada de Autodescoberta</h2>
+              <p class="mb-4">
+                From the Abyss é mais do que um jogo de plataforma. É uma
+                experiência azarada que acompanha Osvaldo, uma raposinha em
+                busca de aventura para se livrar do tédio.
+              </p>
+              <p class="mb-4">
+                Através de um capítulo, você explorará um mapa bonito e
+                profundo, com uma atmosféra única representada por objetos,
+                desafios únicos e iluminação surpreendente.
+              </p>
+              <p class="mb-6">
+                Desenvolvido por desejo e curiosidade pessoal, e também como meu
+                TCC, este jogo combina jogabilidade fluida, mecânicas de
+                plataforma precisas e uma trilha sonora atmosférica para criar
+                uma experiência inesquecível.
+              </p>
+              <a href="historia.html" class="btn btn-primary">
+                <i class="fas fa-arrow-right"></i> Explore a História Completa
+              </a>
+            </div>
+
+            <!-- Cards informativos -->
+            <div class="animate-fade-in-right">
+              <div class="grid grid-2" style="gap: var(--spacing-md)">
+                <div class="card text-center">
+                  <h4
+                    style="
+                      color: var(--secondary-color);
+                      font-size: var(--font-size-3xl);
+                      margin-bottom: var(--spacing-sm);
+                    "
+                  >
+                    1
+                  </h4>
+                  <p style="margin: 0; font-weight: 600">Capítulo Único</p>
+                </div>
+                <div class="card text-center">
+                  <h4
+                    style="
+                      color: var(--secondary-color);
+                      font-size: var(--font-size-3xl);
+                      margin-bottom: var(--spacing-sm);
+                    "
+                  >
+                    1
+                  </h4>
+                  <p style="margin: 0; font-weight: 600">
+                    Jornada fluida e rápida
+                  </p>
+                </div>
+                <div class="card text-center">
+                  <h4
+                    style="
+                      color: var(--secondary-color);
+                      font-size: var(--font-size-3xl);
+                      margin-bottom: var(--spacing-sm);
+                    "
+                  >
+                    ♥
+                  </h4>
+                  <p style="margin: 0; font-weight: 600">Feito com Dedicação</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== DOWNLOAD (Baixar o jogo) ===== -->
+      <section class="section section-dark" id="download">
+        <div class="container text-center">
+          <h2 class="mb-4">Pronto para Começar sua Jornada?</h2>
+          <p
+            class="mb-6"
+            style="
+              font-size: var(--font-size-lg);
+              max-width: 600px;
+              margin-left: auto;
+              margin-right: auto;
+            "
+          >
+            Baixe From the Abyss agora e embarque em uma experiência única de
+            parkour e fluidez.
+          </p>
+          <div
+            style="
+              display: flex;
+              gap: var(--spacing-lg);
+              justify-content: center;
+              flex-wrap: wrap;
+            "
+          >
+            <a
+              href="/Assets/Downloads/Abyss.zip"
+              class="btn btn-primary btn-lg"
+            >
+              <i class="fas fa-download"></i> Download Gratuito
+            </a>
+            <a href="desenvolvedor.html" class="btn btn-secondary btn-lg">
+              <i class="fas fa-users"></i> Conheça a Equipe
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= RODAPÉ ================= -->
+    <footer
+      style="
+        background: var(--background-dark);
+        padding: var(--spacing-xl) 0;
+        border-top: 1px solid var(--border-color);
+      "
+    >
+      <div class="container text-center">
+        <div style="margin-bottom: var(--spacing-lg)">
+          <h3
+            style="
+              color: var(--secondary-color);
+              margin-bottom: var(--spacing-md);
+            "
+          >
+            PROJETO DE TCC
+          </h3>
+          <p style="color: var(--text-muted); margin: 0">
+            Desenvolvido com dedicação e paixão por Eduardo Guilherme Bruscagim
+          </p>
+        </div>
+
+        <!-- Links do rodapé -->
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-lg);
+            flex-wrap: wrap;
+          "
+        >
+          <a href="index.html" class="nav-link">Início</a>
+          <a href="historia.html" class="nav-link">História</a>
+          <a href="mecanica.html" class="nav-link">Mecânica</a>
+          <a href="desenvolvedor.html" class="nav-link">Desenvolvedor</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="Assets/Js/main.js"></script>
+    <script>
+      (function () {
+        document.addEventListener("contextmenu", function (l) {
+          l.preventDefault();
+        });
+        document.addEventListener("keydown", function (l) {
+          (123 === l.keyCode ||
+            (l.ctrlKey && l.shiftKey && 73 === l.keyCode) ||
+            (l.ctrlKey && 85 === l.keyCode)) &&
+            l.preventDefault();
+        });
+      })();
+    </script>
+  </body>
+</html>

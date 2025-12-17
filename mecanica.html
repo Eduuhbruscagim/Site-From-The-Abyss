@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- =================== METADADOS BÁSICOS =================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Descubra as mecânicas e controles de From the Abyss - Tutorial completo e guia de jogabilidade."
+    />
+    <meta
+      name="keywords"
+      content="From the Abyss, mecânicas, tutorial, controles, jogabilidade, parkour, dash"
+    />
+    <meta name="author" content="Eduardo Guilherme Bruscagim" />
+
+    <!-- =================== METADADOS PARA COMPARTILHAMENTO =================== -->
+    <meta property="og:title" content="From the Abyss - Mecânicas" />
+    <meta
+      property="og:description"
+      content="Domine as mecânicas e desafios de From the Abyss."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="assets/images/og-image.jpg" />
+
+    <!-- =================== TÍTULO =================== -->
+    <title>Mecânicas - From the Abyss</title>
+
+    <!-- =================== FONTES E ICONES =================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- =================== CSS PRINCIPAL =================== -->
+    <link rel="stylesheet" href="Assets/Css/main.css" />
+  </head>
+
+  <body>
+    <!-- =================== CABEÇALHO / NAVEGAÇÃO =================== -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <!-- LOGO -->
+        <a href="index.html" class="nav-logo">
+          <i class="fas fa-gamepad"></i> From the Abyss
+        </a>
+
+        <!-- MENU DE NAVEGAÇÃO -->
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="historia.html" class="nav-link">História</a>
+          </li>
+          <li class="nav-item">
+            <a href="mecanica.html" class="nav-link active">Mecânica</a>
+          </li>
+          <li class="nav-item">
+            <a href="desenvolvedor.html" class="nav-link">Desenvolvedor</a>
+          </li>
+        </ul>
+
+        <!-- MENU MOBILE -->
+        <div class="nav-toggle" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- =================== CONTEÚDO PRINCIPAL =================== -->
+    <main class="main">
+      <!-- =================== SEÇÃO PRINCIPAL =================== -->
+      <section class="section-hero" style="min-height: 60vh">
+        <div class="container text-center">
+          <h1 class="animate-fade-in-up">Conteúdo e Tutorial</h1>
+          <p
+            class="animate-fade-in-up"
+            style="
+              font-size: var(--font-size-xl);
+              color: var(--text-secondary);
+              max-width: 800px;
+              margin: 0 auto;
+              animation-delay: 0.2s;
+            "
+          >
+            Domine as mecânicas de From the Abyss e embarque em uma jornada de
+            precisão, timing e superação.
+          </p>
+        </div>
+      </section>
+
+      <!-- =================== SEÇÃO DE CONTROLES =================== -->
+      <section class="section" id="controls">
+        <div class="container">
+          <h2 class="section-title">Como Jogar</h2>
+
+          <div
+            class="card"
+            style="max-width: 800px; margin: 0 auto; text-align: center"
+          >
+            <div
+              style="
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                gap: var(--spacing-xl);
+                margin-bottom: var(--spacing-xl);
+              "
+            >
+              <!-- MOVIMENTAÇÃO -->
+              <div>
+                <div
+                  style="
+                    width: 80px;
+                    height: 80px;
+                    background: var(--gradient-secondary);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto var(--spacing-md);
+                  "
+                >
+                  <i
+                    class="fas fa-arrows-alt"
+                    style="font-size: 2rem; color: var(--text-primary)"
+                  ></i>
+                </div>
+                <h4 style="margin-bottom: var(--spacing-sm)">Movimentação</h4>
+                <p style="margin: 0; color: var(--text-secondary)">
+                  Setas / WASD
+                </p>
+              </div>
+
+              <!-- PULO -->
+              <div>
+                <div
+                  style="
+                    width: 80px;
+                    height: 80px;
+                    background: var(--gradient-secondary);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto var(--spacing-md);
+                  "
+                >
+                  <i
+                    class="fas fa-hand-paper"
+                    style="font-size: 2rem; color: var(--text-primary)"
+                  ></i>
+                </div>
+                <h4 style="margin-bottom: var(--spacing-sm)">Pular</h4>
+                <p style="margin: 0; color: var(--text-secondary)">Espaço</p>
+              </div>
+
+              <!-- DASH -->
+              <div>
+                <div
+                  style="
+                    width: 80px;
+                    height: 80px;
+                    background: var(--gradient-secondary);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto var(--spacing-md);
+                  "
+                >
+                  <i
+                    class="fas fa-bolt"
+                    style="font-size: 2rem; color: var(--text-primary)"
+                  ></i>
+                </div>
+                <h4 style="margin-bottom: var(--spacing-sm)">Dash</h4>
+                <p style="margin: 0; color: var(--text-secondary)">
+                  Shift Esquerdo
+                </p>
+              </div>
+            </div>
+
+            <!-- DICA -->
+            <div
+              style="
+                background: var(--background-card);
+                padding: var(--spacing-lg);
+                border-radius: var(--border-radius-md);
+                border: 1px solid var(--border-color);
+              "
+            >
+              <p
+                style="
+                  margin: 0;
+                  color: var(--text-secondary);
+                  font-style: italic;
+                "
+              >
+                <i
+                  class="fas fa-lightbulb"
+                  style="
+                    color: var(--secondary-color);
+                    margin-right: var(--spacing-sm);
+                  "
+                ></i>
+                Dica: A precisão e o timing são fundamentais. Pratique os
+                movimentos para dominar os desafios mais complexos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================== SEÇÃO MECÂNICAS =================== -->
+      <section class="section section-dark" id="mechanics">
+        <div class="container">
+          <h2 class="section-title">Mecânicas do Jogo</h2>
+
+          <div class="grid grid-2">
+            <!-- EXPLORAÇÃO -->
+            <div class="card animate-fade-in-up" style="animation-delay: 0.1s">
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: var(--spacing-lg);
+                "
+              >
+                <div
+                  style="
+                    width: 60px;
+                    height: 60px;
+                    background: var(--gradient-secondary);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: var(--spacing-md);
+                    flex-shrink: 0;
+                  "
+                >
+                  <i
+                    class="fas fa-map-marked-alt"
+                    style="font-size: 1.5rem; color: var(--text-primary)"
+                  ></i>
+                </div>
+                <h3 class="card-title" style="margin: 0">
+                  Exploração em Plataforma 2D
+                </h3>
+              </div>
+              <p class="card-content">
+                O jogador deve avançar por espaços diversos, usando saltos
+                precisos para progredir por caminhos apertados.
+              </p>
+              <div style="margin-top: var(--spacing-md)">
+                <span
+                  style="
+                    background: rgba(255, 0, 255, 0.2);
+                    color: var(--secondary-color);
+                    padding: var(--spacing-xs) var(--spacing-sm);
+                    border-radius: var(--border-radius-sm);
+                    font-size: var(--font-size-sm);
+                    font-weight: 600;
+                  "
+                >
+                  Exploração
+                </span>
+              </div>
+            </div>
+
+            <!-- PARKOUR -->
+            <div class="card animate-fade-in-up" style="animation-delay: 0.2s">
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: var(--spacing-lg);
+                "
+              >
+                <div
+                  style="
+                    width: 60px;
+                    height: 60px;
+                    background: var(--gradient-secondary);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: var(--spacing-md);
+                    flex-shrink: 0;
+                  "
+                >
+                  <i
+                    class="fas fa-running"
+                    style="font-size: 1.5rem; color: var(--text-primary)"
+                  ></i>
+                </div>
+                <h3 class="card-title" style="margin: 0">
+                  Parkour e Mobilidade
+                </h3>
+              </div>
+              <p class="card-content">
+                O personagem pode pular e usar o dash para desviar de perigos. A
+                movimentação é fluida e essencial para superar obstáculos e
+                caminhos apertados.
+              </p>
+              <div style="margin-top: var(--spacing-md)">
+                <span
+                  style="
+                    background: rgba(255, 0, 255, 0.2);
+                    color: var(--secondary-color);
+                    padding: var(--spacing-xs) var(--spacing-sm);
+                    border-radius: var(--border-radius-sm);
+                    font-size: var(--font-size-sm);
+                    font-weight: 600;
+                  "
+                >
+                  Mobilidade
+                </span>
+              </div>
+            </div>
+
+            <!-- AMBIENTES -->
+            <div class="card animate-fade-in-up" style="animation-delay: 0.3s">
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: var(--spacing-lg);
+                "
+              >
+                <div
+                  style="
+                    width: 60px;
+                    height: 60px;
+                    background: var(--gradient-secondary);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: var(--spacing-md);
+                    flex-shrink: 0;
+                  "
+                >
+                  <i
+                    class="fas fa-seedling"
+                    style="font-size: 1.5rem; color: var(--text-primary)"
+                  ></i>
+                </div>
+                <h3 class="card-title" style="margin: 0">
+                  Ambientes Dinâmicos
+                </h3>
+              </div>
+              <p class="card-content">
+                O cenário muda conforme o avanço do protagonista, influenciando
+                a dificuldade.
+              </p>
+              <div style="margin-top: var(--spacing-md)">
+                <span
+                  style="
+                    background: rgba(255, 0, 255, 0.2);
+                    color: var(--secondary-color);
+                    padding: var(--spacing-xs) var(--spacing-sm);
+                    border-radius: var(--border-radius-sm);
+                    font-size: var(--font-size-sm);
+                    font-weight: 600;
+                  "
+                >
+                  Narrativa Visual
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================== SEÇÃO DE DICAS =================== -->
+      <section class="section section-dark" id="tips">
+        <div class="container">
+          <h2 class="section-title">Dicas para os Jogadores</h2>
+
+          <div class="grid grid-2">
+            <div>
+              <h3
+                style="
+                  margin-bottom: var(--spacing-lg);
+                  color: var(--secondary-color);
+                "
+              >
+                <i
+                  class="fas fa-trophy"
+                  style="margin-right: var(--spacing-sm)"
+                ></i>
+                Estratégias Recomendadas
+              </h3>
+
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  gap: var(--spacing-md);
+                "
+              >
+                <!-- DICA 1 -->
+                <div
+                  style="
+                    display: flex;
+                    align-items: flex-start;
+                    gap: var(--spacing-md);
+                  "
+                >
+                  <div
+                    style="
+                      width: 40px;
+                      height: 40px;
+                      background: var(--gradient-secondary);
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <span style="color: var(--text-primary); font-weight: 700"
+                      >1</span
+                    >
+                  </div>
+                  <div>
+                    <h4 style="margin-bottom: var(--spacing-xs)">
+                      Paciência é Fundamental
+                    </h4>
+                    <p style="margin: 0; color: var(--text-secondary)">
+                      Cada salto requer timing preciso. Observe o mapa e aja com
+                      calma.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- DICA 2 -->
+                <div
+                  style="
+                    display: flex;
+                    align-items: flex-start;
+                    gap: var(--spacing-md);
+                  "
+                >
+                  <div
+                    style="
+                      width: 40px;
+                      height: 40px;
+                      background: var(--gradient-secondary);
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <span style="color: var(--text-primary); font-weight: 700"
+                      >2</span
+                    >
+                  </div>
+                  <div>
+                    <h4 style="margin-bottom: var(--spacing-xs)">
+                      Use o Ambiente
+                    </h4>
+                    <p style="margin: 0; color: var(--text-secondary)">
+                      Aproveite plataformas e paredes. O Pulo Duplo e o Dash são
+                      seus amigos, mas seja cuidadoso.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- DICA 3 -->
+                <div
+                  style="
+                    display: flex;
+                    align-items: flex-start;
+                    gap: var(--spacing-md);
+                  "
+                >
+                  <div
+                    style="
+                      width: 40px;
+                      height: 40px;
+                      background: var(--gradient-secondary);
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <span style="color: var(--text-primary); font-weight: 700"
+                      >3</span
+                    >
+                  </div>
+                  <div>
+                    <h4 style="margin-bottom: var(--spacing-xs)">
+                      Aprenda com os Erros
+                    </h4>
+                    <p style="margin: 0; color: var(--text-secondary)">
+                      Cada morte é uma lição. Analise e tente novamente.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ASPECTOS MENTAIS -->
+            <div>
+              <h3
+                style="
+                  margin-bottom: var(--spacing-lg);
+                  color: var(--secondary-color);
+                "
+              >
+                <i
+                  class="fas fa-brain"
+                  style="margin-right: var(--spacing-sm)"
+                ></i>
+                Aspectos Mentais
+              </h3>
+
+              <div
+                class="card"
+                style="
+                  background: rgba(255, 0, 255, 0.1);
+                  border-color: var(--secondary-color);
+                "
+              >
+                <p
+                  style="
+                    margin-bottom: var(--spacing-md);
+                    color: var(--text-secondary);
+                  "
+                >
+                  From the Abyss não é apenas sobre habilidade, é sobre
+                  perseverança.
+                </p>
+
+                <ul style="list-style: none; padding: 0; margin: 0">
+                  <li
+                    style="
+                      margin-bottom: var(--spacing-sm);
+                      display: flex;
+                      align-items: center;
+                    "
+                  >
+                    <i
+                      class="fas fa-check"
+                      style="
+                        color: var(--secondary-color);
+                        margin-right: var(--spacing-sm);
+                      "
+                    ></i>
+                    <span>Conecte-se com o azar de Osvaldo</span>
+                  </li>
+                  <li
+                    style="
+                      margin-bottom: var(--spacing-sm);
+                      display: flex;
+                      align-items: center;
+                    "
+                  >
+                    <i
+                      class="fas fa-check"
+                      style="
+                        color: var(--secondary-color);
+                        margin-right: var(--spacing-sm);
+                      "
+                    ></i>
+                    <span>Aprecie a trilha sonora e atmosfera</span>
+                  </li>
+                  <li style="display: flex; align-items: center">
+                    <i
+                      class="fas fa-check"
+                      style="
+                        color: var(--secondary-color);
+                        margin-right: var(--spacing-sm);
+                      "
+                    ></i>
+                    <span>Permita-se gostar da experiência</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================== SEÇÃO FINAL  =================== -->
+      <section class="section">
+        <div class="container text-center">
+          <h2 class="mb-4">Pronto para a Jornada?</h2>
+          <p
+            class="mb-6"
+            style="
+              color: var(--text-secondary);
+              max-width: 600px;
+              margin: 0 auto;
+            "
+          >
+            Agora que você conhece as mecânicas, está pronto para embarcar na
+            jornada de Osvaldo.
+          </p>
+
+          <div
+            style="
+              display: flex;
+              gap: var(--spacing-lg);
+              justify-content: center;
+              flex-wrap: wrap;
+            "
+          >
+            <a href="index.html#download" class="btn btn-primary btn-lg">
+              <i class="fas fa-download"></i> Baixar o Jogo
+            </a>
+            <a href="historia.html" class="btn btn-secondary btn-lg">
+              <i class="fas fa-book"></i> Conhecer a História
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =================== RODAPÉ =================== -->
+    <footer
+      style="
+        background: var(--background-dark);
+        padding: var(--spacing-xl) 0;
+        border-top: 1px solid var(--border-color);
+      "
+    >
+      <div class="container text-center">
+        <div style="margin-bottom: var(--spacing-lg)">
+          <h3
+            style="
+              color: var(--secondary-color);
+              margin-bottom: var(--spacing-md);
+            "
+          >
+            PROJETO DE TCC
+          </h3>
+          <p style="color: var(--text-muted); margin: 0">
+            Desenvolvido com dedicação e paixão por Eduardo Guilherme Bruscagim
+          </p>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-lg);
+            flex-wrap: wrap;
+          "
+        >
+          <a href="index.html" class="nav-link">Início</a>
+          <a href="historia.html" class="nav-link">História</a>
+          <a href="mecanica.html" class="nav-link">Mecânica</a>
+          <a href="desenvolvedor.html" class="nav-link">Desenvolvedor</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =================== SCRIPT PRINCIPAL =================== -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      (function () {
+        document.addEventListener("contextmenu", function (l) {
+          l.preventDefault();
+        });
+        document.addEventListener("keydown", function (l) {
+          (123 === l.keyCode ||
+            (l.ctrlKey && l.shiftKey && 73 === l.keyCode) ||
+            (l.ctrlKey && 85 === l.keyCode)) &&
+            l.preventDefault();
+        });
+      })();
+    </script>
+  </body>
+</html>

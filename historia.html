@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- ================= CONFIGURAÇÕES BÁSICAS ================= -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Conheça a história de From the Abyss - A jornada emocional de Osvaldo através de sua mente."
+    />
+    <meta
+      name="keywords"
+      content="From the Abyss, história, narrativa, Osvaldo, jornada emocional, capítulos"
+    />
+    <meta name="author" content="Eduardo Guilherme Bruscagim" />
+    <title>História - From the Abyss</title>
+
+    <!-- ================= FONTES ================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ================= ÍCONES ================= -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- ================= ESTILO PRINCIPAL ================= -->
+    <link rel="stylesheet" href="Assets/Css/main.css" />
+  </head>
+
+  <body>
+    <!-- ================= CABEÇALHO / MENU ================= -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <!-- LOGO -->
+        <a href="index.html" class="nav-logo">
+          <i class="fas fa-gamepad"></i>
+          From the Abyss
+        </a>
+
+        <!-- MENU DE NAVEGAÇÃO -->
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="historia.html" class="nav-link active">História</a>
+          </li>
+          <li class="nav-item">
+            <a href="mecanica.html" class="nav-link">Mecânica</a>
+          </li>
+          <li class="nav-item">
+            <a href="desenvolvedor.html" class="nav-link">Desenvolvedor</a>
+          </li>
+        </ul>
+
+        <!-- BOTÃO MOBILE -->
+        <div class="nav-toggle" id="nav-toggle">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ================= CONTEÚDO PRINCIPAL ================= -->
+    <main class="main">
+      <!-- ===== SEÇÃO PRINCIPAL / INTRODUÇÃO DA PÁGINA ===== -->
+      <section class="section-hero" style="min-height: 60vh">
+        <div class="container text-center">
+          <h1 class="animate-fade-in-up">História e Conteúdo</h1>
+          <p
+            class="animate-fade-in-up"
+            style="
+              font-size: var(--font-size-xl);
+              color: var(--text-secondary);
+              max-width: 800px;
+              margin: 0 auto;
+              animation-delay: 0.2s;
+            "
+          >
+            Descubra a jornada de Osvaldo e os desafios que o aguardam no
+            abismo.
+          </p>
+        </div>
+      </section>
+
+      <!-- ===== LINHA DE PROGRESSO DA HISTÓRIA ===== -->
+      <section class="section">
+        <div class="container">
+          <!-- Progressão entre capítulos -->
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              margin-bottom: var(--spacing-3xl);
+            "
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: var(--spacing-md);
+                flex-wrap: wrap;
+              "
+            >
+              <div class="story-progress-item active" data-chapter="intro">
+                <span>Intro</span>
+              </div>
+              <div class="story-progress-line"></div>
+              <div class="story-progress-item" data-chapter="cap1">
+                <span>Cap 1</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== CONTEÚDO DOS CAPÍTULOS ===== -->
+          <div class="accordion" style="max-width: 900px; margin: 0 auto">
+            <!-- ===== INTRODUÇÃO ===== -->
+            <div class="accordion-item">
+              <button class="accordion-button" data-chapter="intro">
+                <i
+                  class="fas fa-play-circle"
+                  style="
+                    margin-right: var(--spacing-md);
+                    color: var(--secondary-color);
+                  "
+                ></i>
+                Introdução
+              </button>
+
+              <div class="accordion-content">
+                <div class="accordion-content-inner">
+                  <div
+                    style="
+                      display: grid;
+                      grid-template-columns: 1fr auto;
+                      gap: var(--spacing-xl);
+                      align-items: start;
+                    "
+                  >
+                    <div>
+                      <p class="mb-4">
+                        Osvaldo nunca foi o que se pode chamar de sortudo. Se
+                        havia uma poça de lama na calçada, ele a encontrava. Sua
+                        vida era uma comédia de pequenos desastres, mas ele
+                        levava tudo com um suspiro e um sorriso de canto a
+                        canto.
+                      </p>
+
+                      <p class="mb-4">
+                        Certo dia, ele ouviu falar de uma caverna nos arredores
+                        da cidade, famosa por suas trilhas fáceis e formações de
+                        estalactites e feixes de luz. Buscando uma aventura
+                        simples, algo que (pela primeira vez) não desse errado,
+                        ele pegou seu celular para ouvir musica e decidiu
+                        explorar por conta própria.
+                      </p>
+
+                      <p class="mb-4">
+                        Mas a sorte de Osvaldo, como sempre, tinha outros
+                        planos. Um buraco mal sinalizado, uma escorregada boba e
+                        um barulho de pedras caindo foram o suficiente. Quando
+                        percebeu, ele teve que admitir que estava completamente
+                        perdido.
+                      </p>
+
+                      <p class="mb-4">
+                        Agora, a caverna, ou abismo em que caiu, não é mais um
+                        ponto turístico, mas um labirinto escuro e hostil. Ele
+                        precisa enfrentar não apenas os perigos óbvios, como
+                        estalactites, espinhos e passagens perigosas, mas também
+                        a sensação de que a própria caverna está contra ele.
+                      </p>
+
+                      <p
+                        class="mb-0"
+                        style="
+                          font-style: italic;
+                          color: var(--secondary-color);
+                        "
+                      >
+                        Será que sua lendária má sorte será seu fim? Ou será
+                        que, no lugar mais improvável, ele finalmente encontrará
+                        a saída?
+                      </p>
+                    </div>
+
+                    <!-- Avatar do personagem -->
+                    <div style="text-align: center">
+                      <div
+                        style="
+                          width: 100px;
+                          height: 100px;
+                          border-radius: 50%;
+                          background: var(--background-card);
+                        "
+                      >
+                        <img
+                          src="Assets/Images/Background/Raposa.png"
+                          style="
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 50%;
+                          "
+                        />
+                      </div>
+                      <p
+                        style="
+                          margin-top: var(--spacing-md);
+                          font-weight: 600;
+                          color: var(--text-primary);
+                        "
+                      >
+                        Osvaldo
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ===== CAPÍTULO 1 ===== -->
+            <div class="accordion-item">
+              <button class="accordion-button" data-chapter="cap1">
+                <i
+                  class="fas fa-mountain"
+                  style="
+                    margin-right: var(--spacing-md);
+                    color: var(--secondary-color);
+                  "
+                ></i>
+                Capítulo 1 - Abismo
+              </button>
+
+              <div class="accordion-content">
+                <div class="accordion-content-inner">
+                  <div
+                    style="
+                      display: grid;
+                      grid-template-columns: 1fr auto;
+                      gap: var(--spacing-xl);
+                      align-items: start;
+                    "
+                  >
+                    <div>
+                      <p class="mb-4">
+                        A jornada começa com uma queda. O mundo ao redor é
+                        sombrio, formado por estalactites e estruturas antigas
+                        que parecem desmoronar.
+                      </p>
+
+                      <p class="mb-4">
+                        O único som que preenche o vazio é sua musica tocando no
+                        celular. Fósseis antigos abandonados pelas paredes, sem
+                        olhos, sem rostos, apenas silhuetas borradas pela
+                        distância.
+                      </p>
+
+                      <p class="mb-4">
+                        Aqui, os desafios são reais: plataformas pequenas,
+                        saltos exigem precisão, e cada erro pode custar sua
+                        vida.
+                      </p>
+
+                      <p
+                        class="mb-0"
+                        style="
+                          font-style: italic;
+                          color: var(--secondary-color);
+                        "
+                      >
+                        Aos poucos, ele percebe que o abismo diante dele não é
+                        apenas físico, é um reflexo do estado de abandono
+                        daquele local.
+                      </p>
+                    </div>
+
+                    <!-- Avatar do Fóssil -->
+                    <div style="text-align: center">
+                      <div
+                        style="
+                          width: 100px;
+                          height: 100px;
+                          background: linear-gradient(135deg, #000000, #330066);
+                          border-radius: 50%;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                        "
+                      >
+                        <img
+                          src="Assets/Images/Background/Fossil.png"
+                          style="
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 50%;
+                          "
+                        />
+                      </div>
+                      <p
+                        style="
+                          margin-top: var(--spacing-md);
+                          font-weight: 600;
+                          color: var(--text-primary);
+                        "
+                      >
+                        Fóssil
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SEÇÃO FINAL / CHAMADA PARA OUTRAS PÁGINAS ===== -->
+      <section class="section section-dark">
+        <div class="container text-center">
+          <h2 class="mb-4">Continue Explorando</h2>
+          <p
+            class="mb-6"
+            style="
+              color: var(--text-secondary);
+              max-width: 600px;
+              margin: 0 auto;
+            "
+          >
+            Agora que você conhece a história, descubra as mecânicas que tornam
+            essa jornada possível.
+          </p>
+
+          <div
+            style="
+              display: flex;
+              gap: var(--spacing-lg);
+              justify-content: center;
+              flex-wrap: wrap;
+            "
+          >
+            <a href="mecanica.html" class="btn btn-primary btn-lg">
+              <i class="fas fa-gamepad"></i>
+              Mecânicas do Jogo
+            </a>
+            <a href="desenvolvedor.html" class="btn btn-secondary btn-lg">
+              <i class="fas fa-users"></i>
+              Conheça a Equipe
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= RODAPÉ ================= -->
+    <footer
+      style="
+        background: var(--background-dark);
+        padding: var(--spacing-xl) 0;
+        border-top: 1px solid var(--border-color);
+      "
+    >
+      <div class="container text-center">
+        <div style="margin-bottom: var(--spacing-lg)">
+          <h3
+            style="
+              color: var(--secondary-color);
+              margin-bottom: var(--spacing-md);
+            "
+          >
+            PROJETO DE TCC
+          </h3>
+          <p style="color: var(--text-muted); margin: 0">
+            Desenvolvido com dedicação e paixão por Eduardo Guilherme Bruscagim
+          </p>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-lg);
+            flex-wrap: wrap;
+          "
+        >
+          <a href="index.html" class="nav-link">Início</a>
+          <a href="historia.html" class="nav-link">História</a>
+          <a href="mecanica.html" class="nav-link">Mecânica</a>
+          <a href="desenvolvedor.html" class="nav-link">Desenvolvedor</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ================= CSS LOCAL SOMENTE DESSA ABA / COMPONENTES DA HISTÓRIA ================= -->
+    <style>
+      .story-progress-item {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: var(--background-card);
+        border: 2px solid var(--border-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: var(--transition-normal);
+        font-size: var(--font-size-sm);
+        font-weight: 600;
+        color: var(--text-secondary);
+      }
+
+      .story-progress-item.active {
+        background: var(--gradient-secondary);
+        border-color: var(--secondary-color);
+        color: var(--text-primary);
+        box-shadow: var(--shadow-glow);
+      }
+
+      .story-progress-line {
+        width: 40px;
+        height: 2px;
+        background: var(--border-color);
+      }
+
+      @media (max-width: 768px) {
+        .story-progress-item {
+          width: 40px;
+          height: 40px;
+          font-size: var(--font-size-xs);
+        }
+
+        .story-progress-line {
+          width: 20px;
+        }
+      }
+    </style>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      (function () {
+        document.addEventListener("contextmenu", function (l) {
+          l.preventDefault();
+        });
+        document.addEventListener("keydown", function (l) {
+          (123 === l.keyCode ||
+            (l.ctrlKey && l.shiftKey && 73 === l.keyCode) ||
+            (l.ctrlKey && 85 === l.keyCode)) &&
+            l.preventDefault();
+        });
+      })();
+    </script>
+    <script src="assets/js/accordion.js"></script>
+  </body>
+</html>
