@@ -51,3 +51,8 @@ O desenvolvimento foi focado em práticas modernas de Front-end (Mobile-First):
     ├── js/                 # Scripts (main logic, UI interactions)
     ├── images/             # Assets otimizados (WebP/PNG)
     └── fonts/              # Tipografias locais
+
+👨‍💻 Autor
+Eduardo Guilherme Bruscagim
+
+GitHub
