@@ -2,7 +2,7 @@
 
 ![Site Preview](assets/images/site-preview.png)
 
-> **Status:** Online & Responsivo | **Deploy:** [Vercel](https://from-the-abyss.vercel.app/)
+> **Status:** Online
 
 ## 📜 Sobre o Projeto
 
