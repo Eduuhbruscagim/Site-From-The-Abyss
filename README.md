@@ -34,8 +34,8 @@ O desenvolvimento foi focado em práticas modernas de Front-end (Mobile-First):
 
 * **Markup:** HTML5
 * **Estilização:** CSS3 (Custom Properties, Keyframes)
-* **Scripting:** JavaScript (Vanilla)
-* **Assets:** FontAwesome 6 (Ícones), Google Fonts (Tipografia)
+* **Scripting:** JavaScript ES6
+* **Assets:** FontAwesome (Ícones), Google Fonts (Tipografia)
 * **Hospedagem:** Vercel
 
 ## 🗂 Estrutura de Arquivos
