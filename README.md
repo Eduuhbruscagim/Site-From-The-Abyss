@@ -45,7 +45,7 @@ O desenvolvimento foi focado em práticas modernas de Front-end (Mobile-First):
 ├── index.html              # Landing Page (Home)
 ├── historia.html           # Lore e Componentes Accordion
 ├── mecanica.html           # Tutoriais e Cards
-├── desenvolvedor.html    #   Créditos
+├── desenvolvedor.html      #   Créditos
 └── assets/
     ├── css/                # Aparência do site
     ├── js/                 # Scripts (main logic, UI interactions)
