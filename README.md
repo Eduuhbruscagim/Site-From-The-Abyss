@@ -1,6 +1,6 @@
 # 🌐 From the Abyss - Web Portal
 
-![Site Preview](assets/images/site-preview.png)
+![Site Preview](assets/images/background/LandingPage.png)
 
 > **Status:** Online
 
