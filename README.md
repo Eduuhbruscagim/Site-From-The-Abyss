@@ -6,9 +6,9 @@
 
 ## 📜 Sobre o Projeto
 
-Este repositório contém o código-fonte do portal oficial do jogo **From the Abyss**. O projeto foi desenvolvido como uma Single Page Application (SPA) conceitual, utilizando **Vanilla JavaScript** e **CSS3** moderno, sem dependência de frameworks pesados (como React ou Bootstrap) para garantir máxima performance e controle total do DOM.
+Este repositório contém a fonte oficial do jogo **From the Abyss**. O projeto foi desenvolvido como uma Single Page Application (SPA) conceitual, utilizando **Vanilla JavaScript** e **CSS3** moderno, sem dependência de frameworks pesados (como React ou Bootstrap) para garantir performance e controle total do DOM.
 
-O site atua como hub central para distribuição do jogo (download Windows e versão WebGL), além de expandir a lore através de narrativas interativas.
+O site atua como hub central para distribuição do jogo, além de expandir a história através de narrativas interativas.
 
 ## 🔗 Demonstração
 
@@ -18,11 +18,11 @@ O projeto está hospedado e acessível publicamente:
 
 ## ⚙️ Arquitetura e Funcionalidades
 
-O desenvolvimento focou em práticas modernas de Front-end (Mobile-First):
+O desenvolvimento foi focado em práticas modernas de Front-end (Mobile-First):
 
 * **HTML5 Semântico:** Estruturação correta (`<nav>`, `<main>`, `<article>`, `<footer>`) para SEO e acessibilidade.
 * **CSS Architecture:**
-    * Uso extensivo de **CSS Grid** e **Flexbox** para layouts fluidos.
+    * Uso extensivo de **CSS Grid** e **Flexbox** para layouts fluidos independente do tamanho da tela.
     * **CSS Variables (`:root`)** para gerenciamento de tema (paleta de cores e tipografia).
     * Design totalmente responsivo com breakpoints manuais (Mobile 320px -> Desktop 1440px).
 * **JavaScript (ES6+):**
@@ -45,9 +45,9 @@ O desenvolvimento focou em práticas modernas de Front-end (Mobile-First):
 ├── index.html              # Landing Page (Home)
 ├── historia.html           # Lore e Componentes Accordion
 ├── mecanica.html           # Tutoriais e Cards
-├── desenvolvedores.html    # Team & Credits
+├── desenvolvedor.html    #   Créditos
 └── assets/
-    ├── css/                # Folhas de estilo modularizadas
+    ├── css/                # Aparência do site
     ├── js/                 # Scripts (main logic, UI interactions)
     ├── images/             # Assets otimizados (WebP/PNG)
     └── fonts/              # Tipografias locais
